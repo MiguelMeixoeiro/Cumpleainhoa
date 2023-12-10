@@ -1,0 +1,42 @@
+particle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+body {
+  background: url('./fondo1.png'); 
+  background-size: cover;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+button {
+  padding: 40px;
+  margin: 20px;
+  align-self: center;
+}
+
+.preloader {
+  position: absolute;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/127738/mario-face.png);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-size: auto; /* Ajusta el tamaño del fondo para mostrarlo completo en dispositivos móviles */
+  }
+
+  button {
+    padding: 30px; /* Ajusta el tamaño del botón para dispositivos móviles */
+  }
+}
