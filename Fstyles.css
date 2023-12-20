@@ -24,12 +24,14 @@ body {
 }
 
 #image-container img {
-    width: 276px;
+    width: 91vh;
     height: auto;
-    margin-right: 10px;
+    margin-right: 51px;
 }
 p{
     color: #fff;
+    width: 15vh;
+    height: auto;
 }
 button {
     cursor: pointer;
@@ -70,19 +72,55 @@ button {
     position: absolute;
     top: 10px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%);    
 }
 
-/* Media query para dispositivos con un ancho máximo de 600px (tamaño típico de dispositivos móviles) */
-@media screen and (max-width: 600px) {
+
+@media  screen and (max-width: 360px) {
+    body {
+        background-size: contain; /* Ajusta el tamaño del fondo para dispositivos móviles */
+    }
+
+    #image-container {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center; /* Centra el texto en dispositivos móviles */
+        display: block;
+    }
+
     #image-container img {
-        width: 150px; /* Mantén el mismo tamaño de las imágenes en dispositivos móviles */
+        position: absolute;
+        width: 45vh;
         height: auto;
-        margin-bottom: 10px;
+        margin-bottom: 9px;
+        top: -170px;
+        left: -166px;
+    }
+
+    p {
+        width: 40vh;
+        top: 69px;
+        left: -128px;
+        text-align: center;
+        font-size: 18px;
+        position: absolute;
     }
 
     .button {
-        font-size: 3rem; /* Mantén el mismo tamaño del botón en dispositivos móviles */
-        padding: 1em 2em;
+        position: absolute;
+    margin-top: 20px;
+    margin-bottom: 21px;
+    font-size: 1.5rem;
+    padding: 0.5em 1em;
+    left: 50px;
+    transform: none;
+    }
+
+    .musica {
+        position: static; /* Cambia la posición del elemento de audio para seguir el flujo del documento */
+        transform: none; /* Elimina la transformación en dispositivos móviles */
+        margin-top: -139px;; /* Añade margen superior al elemento de audio en dispositivos móviles */
+        left: auto; /* Elimina la propiedad left en dispositivos móviles */
     }
 }

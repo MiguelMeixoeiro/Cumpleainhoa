@@ -9,8 +9,10 @@ function handleLikeClick() {
 
   // Lista de objetos con la información de la imagen y el texto
   const imagesAndTexts = [
-    { imageSrc: "./img1.jpg", text: "decirme lo que quereis poner" },
-    { imageSrc: "./img2.jpg", text: "cositas bonitas para Ainhoa" },
+    { imageSrc: "./img1.jpg", text: "De las pocas cosas bueas que me llevo de 42." },
+    { imageSrc: "./img2.jpg", text: "Me alegro un monton de habernos cruzado, gracias a tu buen gusto por Rammstein." },
+    { imageSrc: "./img3.jpg", text: "Espero poder hacermas noches de pedo por Arguelles y conocer mas Alvaros Amor." },
+    { imageSrc: "./img4.jpg", text: "No se me da muy bien escribir coas bonikas, solo dire Neska ederra eres una personita de luz." },
     // Agrega más objetos según sea necesario
   ];
 
