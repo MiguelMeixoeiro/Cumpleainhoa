@@ -76,9 +76,10 @@ button {
 }
 
 
-@media  screen and (max-width: 360px) {
+@media  screen and (max-width: 768px) {
     body {
-        background-size: contain; /* Ajusta el tamaño del fondo para dispositivos móviles */
+        background-size: cover; /* Ajusta el tamaño del fondo para dispositivos móviles */
+        overflow: hidden;
     }
 
     #image-container {
@@ -91,7 +92,7 @@ button {
 
     #image-container img {
         position: absolute;
-        width: 45vh;
+        width: 39vh;
         height: auto;
         margin-bottom: 9px;
         top: -170px;
@@ -101,7 +102,7 @@ button {
     p {
         width: 40vh;
         top: 69px;
-        left: -128px;
+        left: -168px;
         text-align: center;
         font-size: 18px;
         position: absolute;
@@ -109,18 +110,17 @@ button {
 
     .button {
         position: absolute;
-    margin-top: 20px;
-    margin-bottom: 21px;
-    font-size: 1.5rem;
-    padding: 0.5em 1em;
-    left: 50px;
-    transform: none;
+        margin-top: 20px;
+        margin-bottom: 21px;
+        font-size: 1.5rem;
+        left: 5px;
+        bottom: 113px;
     }
 
     .musica {
-        position: static; /* Cambia la posición del elemento de audio para seguir el flujo del documento */
-        transform: none; /* Elimina la transformación en dispositivos móviles */
-        margin-top: -139px;; /* Añade margen superior al elemento de audio en dispositivos móviles */
-        left: auto; /* Elimina la propiedad left en dispositivos móviles */
+        position: absolute;
+        transform: none;
+        left: 15px;
     }
-}
+ }
+
